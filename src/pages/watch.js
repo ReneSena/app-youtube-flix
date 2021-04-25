@@ -1,18 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { getVideoService } from '../services/videos/videoService';
+import Template from '../template';
 
 export default function watchPage() {
 	const location = useLocation();
+	const [player, setPlayer] = React.useState(location.videoId);
+
+	useEffect(() => {
+		async function getPlayerVideo() {
+			const response = await getVideoService(location.videoId);
+			const playerVideo = await response?.items[0].player.embedHtml;
+
+			return setPlayer(playerVideo);
+		}
+
+		getPlayerVideo();
+	}, []);
 
 	return (
-		<iframe
-			width="560"
-			height="315"
-			src={`https://www.youtube.com/embed/${location.videoId}?autoplay=1`}
-			title="YouTube video player"
-			frameBorder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-			allowFullScreen
-		/>
+		<Template>
+			<div
+				dangerouslySetInnerHTML={{
+					__html: player,
+				}}
+			/>
+		</Template>
 	);
 }
