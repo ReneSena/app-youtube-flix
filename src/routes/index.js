@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import HomePage from '../pages/home';
+import { HomePage } from '../pages/home';
 import WatchPage from '../pages/watch';
 import FavoritePage from '../pages/favorite';
 import SearchPage from '../pages/search';
