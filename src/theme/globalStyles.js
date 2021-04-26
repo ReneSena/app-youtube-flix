@@ -13,5 +13,6 @@ export const GlobalStyles = createGlobalStyle`
 		font-size: 62.5%;
 		width: 100%;
 		color: ${({ theme }) => theme.colors.black};
+		background-color: #c0c0c0;
 	}
 `;

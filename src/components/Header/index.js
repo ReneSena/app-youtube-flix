@@ -1,16 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from '../NavLink';
+import Logo from '../../assets/images/logo.svg';
 
 const Container = styled.header`
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: space-around;
 	width: 100%;
 	max-width: 100%;
 	height: 60px;
 	padding: 0 20px;
-	background-color: #8ebcff;
+	background-color: #121212;
 	position: fixed;
 	top: 0;
 	z-index: 100;
@@ -30,7 +31,7 @@ const MenuItem = styled.li`
 	& a {
 		font-size: 1rem;
 		text-decoration: none;
-		color: #222;
+		color: #ff0;
 	}
 `;
 
@@ -52,6 +53,12 @@ const links = [
 export default function Header() {
 	return (
 		<Container>
+			<img
+				src={Logo}
+				width="50"
+				height="50"
+				alt="Logo do site Aperte o Play"
+			/>
 			<Navbar>
 				<Menu>
 					{links.map(link => (
