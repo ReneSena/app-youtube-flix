@@ -59,6 +59,7 @@ CardContainer.Item = styled.li`
 CardContainer.Image = styled.img`
 	border-radius: 5px;
 	min-width: 320px;
+	max-height: 180px;
 `;
 
 CardContainer.Legend = styled.figcaption`
