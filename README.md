@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+<div align="center">
+	<img src="banner.svg" height="250px" />
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sumário
 
-## Available Scripts
+-   [Objetivo](#objetivo)
+-   [Pré Requisitos](#pre-requisitos)
+-   [Tecnologias que estão sendo utilizadas no projeto](#tecnologias)
+-   [Padrão de código](#padrao-de-codigo)
+-   [IDE utilizada para a codificação](#ide)
+-   [Plugins para instalar no Visual Studio Code (Vscode)](#plugins)
+-   [Instalação do projeto](#instalacao)
+-   [Features já desenvolvidas](#features)
+-   [Referências pra desenvolvimento](#referencias)
 
-In the project directory, you can run:
+## <h2 id="objetivo">:dart: Objetivo</h2>
 
-### `yarn start`
+O aperte o play é uma site que disponibiliza vídeos baseados no youtube.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## <h2 id="pre-requisitos">:books: Pré Requisitos</h2>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   [Node](https://nodejs.org/en/)
+-   [Yarn](https://yarnpkg.com/)
+-   [Git](https://git-scm.com/)
+-   Editor de código
 
-### `yarn test`
+<hr />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## <h2 id="tecnologias">:hammer_and_wrench: Tecnologias que estão sendo utilizadas no projeto</h2>
 
-### `yarn build`
+-   [React](https://pt-br.reactjs.org/)
+-   [Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html)
+-   [Function Components](https://pt-br.reactjs.org/docs/components-and-props.html)
+-   [Axios](https://github.com/axios/axios)
+-   [Styled Components](https://www.styled-components.com/docs/basics)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## <h2 id="padrao-de-codigo">:desktop_computer: Padrão de código</h2>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   [Eslint](https://eslint.org/docs/user-guide/formatters/)
+-   [Prettier](https://prettier.io/)
+-   [EditorConfig](https://editorconfig.org/)
+-   [Commitlint](https://commitlint.js.org/#/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## <h2 id="ide">:headphones: IDE utilizada para a codificação</h2>
 
-### `yarn eject`
+-   [Visual Studio Code](https://code.visualstudio.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## <h2 id="plugins">:electric_plug: Plugins para instalar no Visual Studio Code (Vscode)</h2>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-   [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - Mantém a configuração do projeto igual em todas a ide's do vscode
+-   [EsLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - É responsável por verificar a sintaxe e análise de código, provendo sugestões de solução
+-   [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - É responsável por formatar o código de uma maneira padronizada de acordo com as configurações já definidas
+-   [VSCode Styled Components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components) - É necessário para que o vscode reconheça a sintaxe do styled components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## <h2 id="instalacao">:wrench: Instalação do projeto</h2>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Abra seu terminal e faça o clone do projeto em um diretório da sua máquina, para isso rode:
 
-## Learn More
+```bash
+git clone https://github.com/ReneSena/app-youtube-flix.git ou git@github.com:ReneSena/app-youtube-flix.git
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Após o download do projeto ser finalizado, a pasta front-saas-backoffice estará disponível no diretório que foi realizado o download.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## :rocket: Como executar o projeto?
 
-### Code Splitting
+Existem duas formas de abrir o projeto, uma delas é abrindo o vscode indo na opção File -> Open Folder e escolher a pasta do projeto que deseja abrir. A outra opção é navegar através do terminal até pasta que deseja abrir e rodar o comando:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+code .
+```
 
-### Analyzing the Bundle Size
+Isso fará com que o vscode seja aberto na pasta selecionada.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### :one: Instalando dependências do projeto
 
-### Making a Progressive Web App
+Depois de ter realizado o processo de clonagem, é necessário instalar as dependências do projeto, para isso em seu terminal na pasta do projeto rode:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+yarn install
+```
 
-### Advanced Configuration
+#### :two: Executando o projeto localmente
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Depois que as dependências foram instaladas, é necessário observar que uma pasta _node_modules_ foi criada, é ela que gerenciará nossos pacotes que são instalados no projeto. Bom, agora com o ambiente preparado basta executarmos o comando:
 
-### Deployment
+```bash
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## <h2 id="ambientes">:earth_americas: Ambientes</h2>
 
-### `yarn build` fails to minify
+-   Desenvolvimento: http://localhost:3000/
+-   Produção: http://app-youtube-flix-renesena.vercel.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## <h2 id="features">:heavy_check_mark: Features já desenvolvidas</h2>
+
+-   [x] Listagem de categorias baseadas em playlists pré-definidas
+-   [x] Assistir videos selecionados
+-   [x] Gerenciar videos selecionados como favorito
+-   [x] Pesquisar outros tipos de videos além das categorias já prédefinidas
+
+## <h2 id="referencias">:books: Referências</h2>
+
+-   [Youtube Api](https://developers.google.com/youtube/v3/docs)
+-   [React](https://pt-br.reactjs.org/)
+-   [Dribbble](https://dribbble.com/)
