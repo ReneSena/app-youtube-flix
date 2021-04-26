@@ -9,9 +9,16 @@ function App() {
 	const [favorites, setFavorites] = React.useState(
 		JSON.parse(localStorage.getItem('favorites')) || []
 	);
+	const [searchedVideos, setSearchedVideos] = React.useState([]);
 
 	return (
-		<ContextGlobal.Provider value={{ favorites, setFavorites }}>
+		<ContextGlobal.Provider
+			value={{
+				favorites,
+				setFavorites,
+				searchedVideos,
+				setSearchedVideos,
+			}}>
 			<ThemeProvider theme={theme}>
 				<GlobalStyles />
 				<Routes />
