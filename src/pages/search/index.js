@@ -51,7 +51,6 @@ export function SearchPage() {
 					placeholder="Faça sua pesquisa..."
 					onChange={onChangeInput}
 					tabIndex="0"
-					onBlur={() => console.log(keyboard.current)}
 				/>
 
 				<Keyboard
