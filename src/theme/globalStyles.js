@@ -12,5 +12,6 @@ export const GlobalStyles = createGlobalStyle`
 		font-family: 'Open Sans', sans-serif;
 		font-size: 62.5%;
 		width: 100%;
+		color: ${({ theme }) => theme.colors.black};
 	}
 `;

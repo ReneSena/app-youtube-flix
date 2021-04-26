@@ -6,8 +6,10 @@ function Footer() {
 
 	return (
 		<Container>
-			Aperte o Play {currentYear.getFullYear()} - Todos os direitos
-			reservados
+			<p>
+				Aperte o Play {currentYear.getFullYear()} - Entreterimento
+				garantido
+			</p>
 		</Container>
 	);
 }

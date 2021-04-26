@@ -14,6 +14,7 @@ export function SearchPage() {
 	const keyboard = React.useRef();
 	const [layout, setLayout] = React.useState('default');
 	const [input, setInput] = React.useState('');
+	const [keyBoardStatus, setkeyBoardStatus] = React.useState(false);
 
 	const onChange = field => {
 		setInput(field);
@@ -48,19 +49,24 @@ export function SearchPage() {
 			<Form onSubmit={handleSubmitFormSearch}>
 				<Form.Input
 					value={input}
-					placeholder="Faça sua pesquisa..."
+					placeholder="Digíte sua pesquisa..."
 					onChange={onChangeInput}
+					onFocus={() => setkeyBoardStatus(true)}
 					tabIndex="0"
 				/>
 
-				<Keyboard
-					// eslint-disable-next-line no-return-assign
-					keyboardRef={r => (keyboard.current = r)}
-					tabIndex="0"
-					layoutName={layout}
-					onChange={onChange}
-					onKeyPress={onKeyPress}
-				/>
+				{keyBoardStatus && (
+					<>
+						<Keyboard
+							// eslint-disable-next-line no-return-assign
+							keyboardRef={r => (keyboard.current = r)}
+							tabIndex="0"
+							layoutName={layout}
+							onChange={onChange}
+							onKeyPress={onKeyPress}
+						/>
+					</>
+				)}
 			</Form>
 
 			<CardList>
