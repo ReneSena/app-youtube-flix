@@ -54,13 +54,18 @@ export function SearchPage() {
 	return (
 		<Template>
 			<Form onSubmit={handleSubmitFormSearch}>
-				<Form.Input
-					value={input}
-					placeholder="Digíte sua pesquisa..."
-					onChange={onChangeInput}
-					onFocus={() => setkeyBoardStatus(true)}
-					tabIndex="0"
-				/>
+				<Form.Search>
+					<Form.Input
+						value={input}
+						placeholder="Digíte sua pesquisa..."
+						onChange={onChangeInput}
+						onFocus={() => setkeyBoardStatus(true)}
+						tabIndex="0"
+					/>
+					<Form.Button type="submit" tabIndex="0">
+						Buscar
+					</Form.Button>
+				</Form.Search>
 
 				{keyBoardStatus && (
 					<>

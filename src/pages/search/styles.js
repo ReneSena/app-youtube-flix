@@ -18,6 +18,11 @@ export const Form = styled.form`
 	}
 `;
 
+Form.Search = styled.div`
+	display: flex;
+	align-items: center;
+`;
+
 Form.Input = styled.input`
 	width: 100%;
 	max-width: 850px;
@@ -29,9 +34,32 @@ Form.Input = styled.input`
 	transition: all 0.3s ease-in-out;
 	border-radius: 5px;
 	background-color: ${({ theme }) => theme.colors.gray100};
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
 
 	&:hover,
 	&:focus {
 		background-color: ${({ theme }) => theme.colors.purpleLight};
+	}
+`;
+
+Form.Button = styled.button`
+	display: block;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 50px;
+	border: 0;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: ${({ theme }) => theme.colors.black};
+	color: ${({ theme }) => theme.colors.white};
+	cursor: pointer;
+	transition: all 0.3s linear;
+	font-size: 0.875rem;
+
+	&:hover,
+	&:focus {
+		opacity: 0.5;
 	}
 `;
