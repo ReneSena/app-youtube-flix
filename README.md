@@ -2,6 +2,10 @@
 	<img src="banner.svg" height="250px" />
 </div>
 
+## :rocket: [Acessar site em produção](http://app-youtube-flix-renesena.vercel.app/)
+
+<hr />
+
 ## Sumário
 
 -   [Objetivo](#objetivo)
@@ -11,6 +15,7 @@
 -   [IDE utilizada para a codificação](#ide)
 -   [Plugins para instalar no Visual Studio Code (Vscode)](#plugins)
 -   [Instalação do projeto](#instalacao)
+-   [Rodando os Testes no projeto](#testes)
 -   [Features já desenvolvidas](#features)
 -   [Referências pra desenvolvimento](#referencias)
 
@@ -34,6 +39,7 @@ O aperte o play é uma site que disponibiliza vídeos baseados no youtube.
 -   [Function Components](https://pt-br.reactjs.org/docs/components-and-props.html)
 -   [Axios](https://github.com/axios/axios)
 -   [Styled Components](https://www.styled-components.com/docs/basics)
+-   [Jest](https://jestjs.io/)
 
 ## <h2 id="padrao-de-codigo">:desktop_computer: Padrão de código</h2>
 
@@ -87,6 +93,14 @@ Depois que as dependências foram instaladas, é necessário observar que uma pa
 
 ```bash
 yarn start
+```
+
+## <h2 id="testes">:eyes: Executando os testes
+
+No projeto, existem testes relacionados a api do Youtube. Para executá los, basta abrir o terminal e rodar o comando:
+
+```bash
+yarn test
 ```
 
 ## <h2 id="ambientes">:earth_americas: Ambientes</h2>
