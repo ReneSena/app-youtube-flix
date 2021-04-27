@@ -7,31 +7,43 @@ import Template from '../../template';
 import { CardButtonFavorite } from '../../components/ButtonFavorite';
 import { categories } from './content';
 import { ContextGlobal } from '../../context';
+import { Loader } from '../../components/Loader';
 
 export function HomePage() {
 	const { favorites, setFavorites } = React.useContext(ContextGlobal);
 	const [videos, setVideos] = React.useState([]);
 
 	React.useEffect(() => {
-		categories.map(category =>
-			getPlaylistVideosService(category.idPlayList)
-				.then(infoVideos =>
-					setVideos(value => [
-						...value,
-						{ category: category.name, playList: infoVideos },
-					])
-				)
-				.catch(error => {
-					throw new Error(
-						'Não foi possível buscar os dados do servidor.',
-						error
-					);
-				})
-		);
+		categories.map(async category => {
+			const infoVideos = await getPlaylistVideosService(
+				category.idPlayList
+			);
+
+			setVideos(value => [
+				...value,
+				{ category: category.name, playList: infoVideos },
+			]);
+		});
 	}, []);
+
+	function favoriteCard(event) {
+		const buttonID = event.target.getAttribute('data-id');
+		const existInLocalStorange = favorites.indexOf(buttonID) !== -1;
+
+		if (existInLocalStorange) {
+			setFavorites(() => favorites.filter(video => video !== buttonID));
+
+			favorites.splice(buttonID, 1);
+		} else {
+			setFavorites([...favorites, buttonID]);
+		}
+
+		localStorage.setItem('favorites', JSON.stringify(favorites));
+	}
 
 	return (
 		<Template>
+			{videos.length === 0 && <Loader />}
 			{videos.map(playList => (
 				<PlayList title={playList.category} key={playList.category}>
 					<CardList>
@@ -54,36 +66,7 @@ export function HomePage() {
 									<CardButtonFavorite
 										id={item.snippet.resourceId.videoId}
 										listFavorites={favorites}
-										handler={event => {
-											const buttonID = event.target.getAttribute(
-												'data-id'
-											);
-
-											const existInLocalStorange =
-												favorites.indexOf(buttonID) !==
-												-1;
-
-											if (existInLocalStorange) {
-												setFavorites(() =>
-													favorites.filter(
-														video =>
-															video !== buttonID
-													)
-												);
-
-												favorites.splice(buttonID, 1);
-											} else {
-												setFavorites([
-													...favorites,
-													buttonID,
-												]);
-											}
-
-											localStorage.setItem(
-												'favorites',
-												JSON.stringify(favorites)
-											);
-										}}
+										handler={event => favoriteCard(event)}
 									/>
 								</Card>
 							</CardItem>

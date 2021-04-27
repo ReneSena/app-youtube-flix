@@ -4,6 +4,8 @@ import { ContextGlobal } from '../context';
 import Template from '../template';
 import { CardButtonFavorite } from '../components/ButtonFavorite';
 import { getVideoService } from '../services/videos/videoService';
+import FeedbackFavorite from '../assets/images/favorite.svg';
+import { Feedback } from '../components/Feedback';
 
 function favoritePage() {
 	const [listFavorites, setListFavorites] = React.useState([]);
@@ -16,10 +18,30 @@ function favoritePage() {
 		});
 	}, [favorites]);
 
+	function undoFavoriteCard(event) {
+		const buttonID = event.target.getAttribute('data-id');
+		const existInLocalStorange = favorites.indexOf(buttonID) !== -1;
+
+		if (existInLocalStorange) {
+			setListFavorites(() =>
+				listFavorites.filter(item => item.items[0].id !== buttonID)
+			);
+
+			favorites.splice(buttonID, 1);
+		}
+
+		localStorage.setItem('favorites', JSON.stringify(favorites));
+	}
+
 	return (
 		<Template>
+			{favorites.length === 0 && (
+				<Feedback
+					urlImage={FeedbackFavorite}
+					description="Você não tem nenhum video salvo"
+				/>
+			)}
 			<CardList>
-				{favorites.length === 0 && <div>Nem favorito encontrado</div>}
 				{listFavorites.length !== 0 &&
 					listFavorites.map(video => (
 						<CardItem key={video.items[0].id}>
@@ -43,30 +65,7 @@ function favoritePage() {
 								<CardButtonFavorite
 									listFavorites={favorites}
 									id={video.items[0].id}
-									handler={event => {
-										const buttonID = event.target.getAttribute(
-											'data-id'
-										);
-										const existInLocalStorange =
-											favorites.indexOf(buttonID) !== -1;
-
-										if (existInLocalStorange) {
-											setListFavorites(() =>
-												listFavorites.filter(
-													item =>
-														item.items[0].id !==
-														buttonID
-												)
-											);
-
-											favorites.splice(buttonID, 1);
-										}
-
-										localStorage.setItem(
-											'favorites',
-											JSON.stringify(favorites)
-										);
-									}}
+									handler={event => undoFavoriteCard(event)}
 								/>
 							</Card>
 						</CardItem>

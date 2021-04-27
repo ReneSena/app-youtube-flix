@@ -27,6 +27,8 @@ Form.Input = styled.input`
 	padding: 20px;
 	font-size: 1.25rem;
 	transition: all 0.3s ease-in-out;
+	border-radius: 5px;
+	background-color: ${({ theme }) => theme.colors.gray100};
 
 	&:hover,
 	&:focus {

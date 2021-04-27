@@ -11,5 +11,11 @@ export function getPlaylistVideosService(idPlaylist) {
 			}
 
 			return response;
+		})
+		.catch(error => {
+			throw new Error(
+				'Não foi possível buscar os dados do servidor, tente recarregar a página.',
+				error
+			);
 		});
 }

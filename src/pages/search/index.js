@@ -6,6 +6,9 @@ import { CardList, CardItem, Card } from '../../components/CardThumbnail';
 import { getSearchVideosService } from '../../services/searchVideos/searchVideosService';
 import { ContextGlobal } from '../../context';
 import { Form } from './styles';
+import { Feedback } from '../../components/Feedback';
+import FeedbackSearch from '../../assets/images/search.svg';
+import { Loader } from '../../components/Loader';
 
 export function SearchPage() {
 	const { searchedVideos, setSearchedVideos } = React.useContext(
@@ -15,6 +18,7 @@ export function SearchPage() {
 	const [layout, setLayout] = React.useState('default');
 	const [input, setInput] = React.useState('');
 	const [keyBoardStatus, setkeyBoardStatus] = React.useState(false);
+	const [loader, setLoader] = React.useState(false);
 
 	const onChange = field => {
 		setInput(field);
@@ -38,10 +42,13 @@ export function SearchPage() {
 
 	function handleSubmitFormSearch(event) {
 		event.preventDefault();
+		setLoader(true);
 
-		getSearchVideosService(input).then(search =>
-			setSearchedVideos(search.items)
-		);
+		getSearchVideosService(input).then(search => {
+			setSearchedVideos(search.items);
+			setLoader(false);
+			setkeyBoardStatus(false);
+		});
 	}
 
 	return (
@@ -69,21 +76,31 @@ export function SearchPage() {
 				)}
 			</Form>
 
+			{searchedVideos.length === 0 && input.length === 0 && (
+				<Feedback
+					urlImage={FeedbackSearch}
+					description="Você não realizou nenhuma pesquisa"
+				/>
+			)}
+
+			{loader && <Loader />}
+
 			<CardList>
-				{searchedVideos.map(item => (
-					<CardItem key={item.id.videoId}>
-						<Card
-							title={item.snippet.title}
-							srcImage={item.snippet.thumbnails.medium.url}
-							width={item.snippet.thumbnails.medium.width}
-							height={item.snippet.thumbnails.medium.height}
-							params={{
-								pathname: '/watch',
-								videoId: item.id.videoId,
-							}}
-						/>
-					</CardItem>
-				))}
+				{searchedVideos.length !== 0 &&
+					searchedVideos.map(item => (
+						<CardItem key={item.id.videoId}>
+							<Card
+								title={item.snippet.title}
+								srcImage={item.snippet.thumbnails.medium.url}
+								width={item.snippet.thumbnails.medium.width}
+								height={item.snippet.thumbnails.medium.height}
+								params={{
+									pathname: '/watch',
+									videoId: item.id.videoId,
+								}}
+							/>
+						</CardItem>
+					))}
 			</CardList>
 		</Template>
 	);
