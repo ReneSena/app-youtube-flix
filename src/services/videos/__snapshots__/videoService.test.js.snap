@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getVideoService() should be able to fetch 1`] = `
+Object {
+  "etag": "rl46Jy0ejjmB9uIkWa83r3e1dBI",
+  "items": Array [
+    Object {
+      "etag": "MuoBeeghAXwZYDI4tO1IlOp1b-s",
+      "id": "XzQCZHVmk4k",
+      "kind": "youtube#video",
+      "player": Object {
+        "embedHtml": "<iframe width=\\"480\\" height=\\"270\\" src=\\"//www.youtube.com/embed/XzQCZHVmk4k\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\\" allowfullscreen></iframe>",
+      },
+      "snippet": Object {
+        "categoryId": "23",
+        "channelId": "UCYM04a9yva0wMQ7bPlii4rg",
+        "channelTitle": "4 AMIGOS STAND UP COMEDY",
+        "description": "Venham nos assistir ao vivo, ingressos em: https://www.ingressorapido.com.br/compras/?id=43913#!/tickets",
+        "liveBroadcastContent": "none",
+        "localized": Object {
+          "description": "Venham nos assistir ao vivo, ingressos em: https://www.ingressorapido.com.br/compras/?id=43913#!/tickets",
+          "title": "FILA DE PIADAS - HISTÓRIAS CONSTRANGEDORAS - #51 feat. Renato Albani",
+        },
+        "publishedAt": "2017-09-20T14:00:02Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/XzQCZHVmk4k/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/XzQCZHVmk4k/hqdefault.jpg",
+            "width": 480,
+          },
+          "maxres": Object {
+            "height": 720,
+            "url": "https://i.ytimg.com/vi/XzQCZHVmk4k/maxresdefault.jpg",
+            "width": 1280,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/XzQCZHVmk4k/mqdefault.jpg",
+            "width": 320,
+          },
+          "standard": Object {
+            "height": 480,
+            "url": "https://i.ytimg.com/vi/XzQCZHVmk4k/sddefault.jpg",
+            "width": 640,
+          },
+        },
+        "title": "FILA DE PIADAS - HISTÓRIAS CONSTRANGEDORAS - #51 feat. Renato Albani",
+      },
+    },
+  ],
+  "kind": "youtube#videoListResponse",
+  "pageInfo": Object {
+    "resultsPerPage": 1,
+    "totalResults": 1,
+  },
+}
+`;
+
+exports[`getVideoService() the fetch fails with an error 1`] = `
+Object {
+  "etag": "YIUPVpqNjppyCWOZfL-19bLb7uk",
+  "items": Array [],
+  "kind": "youtube#videoListResponse",
+  "pageInfo": Object {
+    "resultsPerPage": 0,
+    "totalResults": 0,
+  },
+}
+`;

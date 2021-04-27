@@ -1,0 +1,526 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getSearchVideosService() should be able to fetch 1`] = `
+Object {
+  "etag": "-Z-KbfW03PkHv3GOg35rN-xrjbE",
+  "items": Array [
+    Object {
+      "etag": "BkK8sH8uZEnoBJaZlUR04Hv5_WI",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "v07H75lWdYw",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UCesGAfPJfE-xdHo-DC0ju-g",
+        "channelTitle": "IR GAMES",
+        "description": "(GTA V MOD) Homem Aranha (Spiderman), Freddy Urso (Five Nights at Freddy's), Homem de Ferro, Batman, Bumblebee (Transformers), Lanterna Verde, ...",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-07-05T12:23:53Z",
+        "publishedAt": "2018-07-05T12:23:53Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/v07H75lWdYw/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/v07H75lWdYw/hqdefault.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/v07H75lWdYw/mqdefault.jpg",
+            "width": 320,
+          },
+        },
+        "title": "CARROS e MOTOS com HOMEM ARANHA e SUPER HERÓIS! Desafio de Super Carros e MOTOS na Rampa - IR GAMES",
+      },
+    },
+    Object {
+      "etag": "7mCoFQmpv7PI7NlSfoEF098xZPM",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "WZ-P2iXGVdU",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UCRZ_LC2YdRPTnSxWwFmsaXw",
+        "channelTitle": "Wason BB",
+        "description": "CARROS 3 • FILME DUBLADO • MELHORES MOMENTOS 2017 FILMES COMPLETO DUBLADO DE ANIMAÇAO.",
+        "liveBroadcastContent": "none",
+        "publishTime": "2019-10-29T14:40:34Z",
+        "publishedAt": "2019-10-29T14:40:34Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/WZ-P2iXGVdU/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/WZ-P2iXGVdU/hqdefault.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/WZ-P2iXGVdU/mqdefault.jpg",
+            "width": 320,
+          },
+        },
+        "title": "CARROS 3 • FILME DUBLADO • MELHORES MOMENTOS 2017",
+      },
+    },
+    Object {
+      "etag": "nIgx-z5b6tjLarW9Ulq8HZ9E0zk",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "4MgU52QQGew",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UCesGAfPJfE-xdHo-DC0ju-g",
+        "channelTitle": "IR GAMES",
+        "description": "(GTA V MOD) Homem Aranha (Spiderman), Freddy Urso (Five Nights at Freddy's), Homem de Ferro, Batman, Lanterna Verde, Bumblebee com CARROS ...",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-07-19T12:17:05Z",
+        "publishedAt": "2018-07-19T12:17:05Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/4MgU52QQGew/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/4MgU52QQGew/hqdefault.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/4MgU52QQGew/mqdefault.jpg",
+            "width": 320,
+          },
+        },
+        "title": "CARROS Pickup com HOMEM ARANHA e SUPER HERÓIS! Desafio de Carros na Mega Rampa - IR GAMES",
+      },
+    },
+    Object {
+      "etag": "fbg_Ty_zo4X2P5J9Yte2ZEvPO7s",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "mZIJG9D45oo",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UC8EvMdabpl7f69lYp-Gmp4A",
+        "channelTitle": "Gaming To You",
+        "description": "\\"Please Subscribe ❤  ❤https://www.youtube.com/channel/UCyAq1Xh3MsKWcKqz65nC_cw/?sub_confirmation=1 ❤❤❤ GTA 5 Stream #Homem-Aranha Parkour ...",
+        "liveBroadcastContent": "live",
+        "publishTime": "2021-04-27T06:41:34Z",
+        "publishedAt": "2021-04-27T06:41:34Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/mZIJG9D45oo/default_live.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/mZIJG9D45oo/hqdefault_live.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/mZIJG9D45oo/mqdefault_live.jpg",
+            "width": 320,
+          },
+        },
+        "title": "Homem-Aranha Parkour com Carros Transportador Motos Ônibus Tratores na Pista De Obstáculos - Gta 5 S",
+      },
+    },
+    Object {
+      "etag": "Xq-wt-koDk1HEQUfNbadJ6WVqCI",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "ECXEC9sSGaM",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UC6g2MSaV-5wyyKPzR1UnFIQ",
+        "channelTitle": "TV para crianças",
+        "description": "Veja a melhor compilação dos vídeos de carros em português! Os carros ajudantes - caminhão de bombeiros, a ambulância, carro de polícia e outros carros em ...",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-09-27T14:01:00Z",
+        "publishedAt": "2018-09-27T14:01:00Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/ECXEC9sSGaM/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/ECXEC9sSGaM/hqdefault.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/ECXEC9sSGaM/mqdefault.jpg",
+            "width": 320,
+          },
+        },
+        "title": "Os carros ajudantes! Coleção com os melhores vídeos divertidos de carrinhos",
+      },
+    },
+    Object {
+      "etag": "X8sMOiCvVUllQ0EMDJuH5nuvtgI",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "yocckWEuTZI",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UC0g5tK2ir_Xq9HXSNFSLk4Q",
+        "channelTitle": "GetMods Games",
+        "description": "GTA V MODS - SuperHeróis: Spiderman, Captain America, Star Lord, Black Panther, Captain Marvel, Gambit, Black Cat, Hulk, Kick Ass, Deadpool, Nova, Falcon ...",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-04-15T13:00:09Z",
+        "publishedAt": "2021-04-15T13:00:09Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/yocckWEuTZI/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/yocckWEuTZI/hqdefault.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/yocckWEuTZI/mqdefault.jpg",
+            "width": 320,
+          },
+        },
+        "title": "Homem Aranha Teste de Impacto Carros com SuperHeróis - Spiderman Crash Test Сhallenge GTA V",
+      },
+    },
+    Object {
+      "etag": "t-9D2Dw8LfYF32G-K5UCpb4pmuA",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "-AVZ2U4GTQw",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UC0g5tK2ir_Xq9HXSNFSLk4Q",
+        "channelTitle": "GetMods Games",
+        "description": "GTA 5 MODS - SuperHeróis: Spiderman Thron, Spiderman Black, Venom, Iron Fist, Hulk, Nova, Bumblebee, Harley Quinn, Falcon, Captain America, Kick Ass, ...",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-04-24T12:30:00Z",
+        "publishedAt": "2021-04-24T12:30:00Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/-AVZ2U4GTQw/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/-AVZ2U4GTQw/hqdefault.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/-AVZ2U4GTQw/mqdefault.jpg",
+            "width": 320,
+          },
+        },
+        "title": "Homem Aranha Grandes Saltos nos Carros com SuperHeróis - Spiderman Big Jumps Stunt Сhallenge GTA V",
+      },
+    },
+    Object {
+      "etag": "9A6pJoi6wxwyAlFvrLnzESU5mNg",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "Y28q-Wt9bcQ",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UC-TEMrbSQ9PdHikBB1BsGRQ",
+        "channelTitle": "ED Vela YT",
+        "description": "Increibles carros gigantes con Spiderman, Iron Man, Superman, Hulk, Venom y mas superheroes GTA V #GTAV #Carros #Spiderman Track: LFZ - Popsicle ...",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-03-09T01:45:00Z",
+        "publishedAt": "2021-03-09T01:45:00Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/Y28q-Wt9bcQ/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/Y28q-Wt9bcQ/hqdefault.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/Y28q-Wt9bcQ/mqdefault.jpg",
+            "width": 320,
+          },
+        },
+        "title": "Increibles carros gigantes con Spiderman, Iron Man, Superman, Hulk, Venom y mas superheroes GTA",
+      },
+    },
+    Object {
+      "etag": "nar0dUxxNkEjHcQeMbnLRpNQOe8",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "LzOnA_zjP7Q",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UC0g5tK2ir_Xq9HXSNFSLk4Q",
+        "channelTitle": "GetMods Games",
+        "description": "GTA 5 MODS : Spiderman, Ironman, Green Lantern, Captain America, Black Phanter, Hulk, Deadpool, Captain Marvel, Captain America, Harley Quinn e Amigos ...",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-11T13:00:14Z",
+        "publishedAt": "2021-02-11T13:00:14Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/LzOnA_zjP7Q/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/LzOnA_zjP7Q/hqdefault.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/LzOnA_zjP7Q/mqdefault.jpg",
+            "width": 320,
+          },
+        },
+        "title": "Carros Loucas com Homem Aranha e Heróis! Crazy Cars and Spiderman Сhallenge on Stunts Ramp GTA 5",
+      },
+    },
+    Object {
+      "etag": "HnMdu3zeTFwuKtaSj7NO-3BGK8A",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "z_SdoLvU5iY",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UCXMdit7FQ6t_a_I-PUuOogw",
+        "channelTitle": "Musica De Piano",
+        "description": "(Video Educativo) Aprende los colores con los juguetes para coches https://youtu.be/z_SdoLvU5iY aprende los colores, video educativo, colores, juguetes, para ...",
+        "liveBroadcastContent": "none",
+        "publishTime": "2019-05-25T09:58:47Z",
+        "publishedAt": "2019-05-25T09:58:47Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/z_SdoLvU5iY/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/z_SdoLvU5iY/hqdefault.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/z_SdoLvU5iY/mqdefault.jpg",
+            "width": 320,
+          },
+        },
+        "title": "(Video Educativo) Aprende los colores con los juguetes para coches",
+      },
+    },
+    Object {
+      "etag": "Ig4luiIi5gqhk-2H4qFdMEOe3do",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "FU6EDSNpKXE",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UC0g5tK2ir_Xq9HXSNFSLk4Q",
+        "channelTitle": "GetMods Games",
+        "description": "GTA 5 MODS - SuperHeróis: Spiderman Thron, Spiderman PS4, Deadpool, Captain America, Ironman, Black Cat, Harley Quinn, Venom, Falcon, Green Lantern, ...",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-04-06T13:00:04Z",
+        "publishedAt": "2021-04-06T13:00:04Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/FU6EDSNpKXE/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/FU6EDSNpKXE/hqdefault.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/FU6EDSNpKXE/mqdefault.jpg",
+            "width": 320,
+          },
+        },
+        "title": "Homem Aranha Oito Corrida nos Carros com SuperHeróis - Spiderman Race Eight Сhallenge GTA V",
+      },
+    },
+    Object {
+      "etag": "Jw588_bu2wSee2SowDMJI-F-B1E",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "7IcEAui8YOw",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UCDB5-FXoNKU6Hi1kxoNq71w",
+        "channelTitle": "Racing Gamer",
+        "description": "(GTA V Mods) Homem Aranha (Spiderman), Deadpool, Homem de Ferro, Power Ranger, Homem Formiga, Pantera Negra, Capitão América e Wolverine com ...",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-05-05T11:57:52Z",
+        "publishedAt": "2020-05-05T11:57:52Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/7IcEAui8YOw/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/7IcEAui8YOw/hqdefault.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/7IcEAui8YOw/mqdefault.jpg",
+            "width": 320,
+          },
+        },
+        "title": "Coleção de Super Carros de Super-Heróis, Homem Aranha, Super-Homem, Homem de Ferro - Racing Gamer",
+      },
+    },
+    Object {
+      "etag": "zXwpWKlILyBJbf8Hm9-MdZxC_ck",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "jHpt8XBTITk",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UCTsPDENL6UTfdIExrWO2NlQ",
+        "channelTitle": "Vlad y Nikita Show",
+        "description": "Vlad y Niki se divierten con carros de juguete ¡Por favor, suscríbete! Tienda Vlad & Niki: https://vladandniki.com/ Aplicación Google Play: ...",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-04-10T07:00:08Z",
+        "publishedAt": "2021-04-10T07:00:08Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/jHpt8XBTITk/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/jHpt8XBTITk/hqdefault.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/jHpt8XBTITk/mqdefault.jpg",
+            "width": 320,
+          },
+        },
+        "title": "Vlad y Niki se divierten con carros de juguete",
+      },
+    },
+    Object {
+      "etag": "wAG46GQqynnTMe073hXxeNmNLRM",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "vvV2neCLIwo",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UC0g5tK2ir_Xq9HXSNFSLk4Q",
+        "channelTitle": "GetMods Games",
+        "description": "GTA 5 MODS : Spiderman, Green Lantern, Black Cat, Captain America, Black Phanter, Venom, Spiderman Toxin, Dr. Strange, Superman and Friends!) Carros ...",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-02T12:00:01Z",
+        "publishedAt": "2021-01-02T12:00:01Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/vvV2neCLIwo/default.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/vvV2neCLIwo/hqdefault.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/vvV2neCLIwo/mqdefault.jpg",
+            "width": 320,
+          },
+        },
+        "title": "Carros Legais com Homem Aranha e Heróis! Сhallenge Spiderman Cool Cars on Ramp - GTA 5 MODS",
+      },
+    },
+    Object {
+      "etag": "iW70Rz1tNxb_y2YIhVcDcZOGolE",
+      "id": Object {
+        "kind": "youtube#video",
+        "videoId": "aoxD2WsxOqU",
+      },
+      "kind": "youtube#searchResult",
+      "snippet": Object {
+        "channelId": "UC8EvMdabpl7f69lYp-Gmp4A",
+        "channelTitle": "Gaming To You",
+        "description": "\\"Please Subscribe ❤  ❤https://www.youtube.com/channel/UCyAq1Xh3MsKWcKqz65nC_cw/?sub_confirmation=1 ❤❤❤ GTA 5 Stream #Homem-Aranha Parkour ...",
+        "liveBroadcastContent": "live",
+        "publishTime": "2021-04-27T09:57:55Z",
+        "publishedAt": "2021-04-27T09:57:55Z",
+        "thumbnails": Object {
+          "default": Object {
+            "height": 90,
+            "url": "https://i.ytimg.com/vi/aoxD2WsxOqU/default_live.jpg",
+            "width": 120,
+          },
+          "high": Object {
+            "height": 360,
+            "url": "https://i.ytimg.com/vi/aoxD2WsxOqU/hqdefault_live.jpg",
+            "width": 480,
+          },
+          "medium": Object {
+            "height": 180,
+            "url": "https://i.ytimg.com/vi/aoxD2WsxOqU/mqdefault_live.jpg",
+            "width": 320,
+          },
+        },
+        "title": "Homem-Aranha Parkour com Carros Motos Transportador Tratores na Pista De Obstáculos - Gta 5 Stream",
+      },
+    },
+  ],
+  "kind": "youtube#searchListResponse",
+  "nextPageToken": "CA8QAA",
+  "pageInfo": Object {
+    "resultsPerPage": 15,
+    "totalResults": 1000000,
+  },
+  "regionCode": "BR",
+}
+`;
