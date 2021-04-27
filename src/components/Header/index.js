@@ -1,56 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
+import { useLocation } from 'react-router-dom';
 import { NavLink } from '../NavLink';
 import Logo from '../../assets/images/logo.svg';
-
-const Container = styled.header`
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	width: 100%;
-	max-width: 100%;
-	height: 60px;
-	padding: 0 20px;
-	background-color: #121212;
-	position: fixed;
-	top: 0;
-	z-index: 100;
-`;
-
-const Navbar = styled.nav``;
-
-const Menu = styled.ul`
-	display: flex;
-	align-items: center;
-`;
-
-const MenuItem = styled.li`
-	list-style: none;
-	margin: 0 20px;
-
-	& a {
-		font-size: 1rem;
-		text-decoration: none;
-		color: #ff0;
-	}
-`;
-
-const links = [
-	{
-		label: 'Home',
-		url: '/',
-	},
-	{
-		label: 'Favoritos',
-		url: '/favorites',
-	},
-	{
-		label: 'Pesquisar',
-		url: '/search',
-	},
-];
+import { links } from './content';
+import { Container } from './styles';
 
 export default function Header() {
+	const location = useLocation();
+
 	return (
 		<Container>
 			<img
@@ -59,15 +16,21 @@ export default function Header() {
 				height="50"
 				alt="Logo do site Aperte o Play"
 			/>
-			<Navbar>
-				<Menu>
+			<Container.Navbar>
+				<Container.Menu>
 					{links.map(link => (
-						<MenuItem key={link.url}>
-							<NavLink params={link.url}>{link.label}</NavLink>
-						</MenuItem>
+						<Container.MenuItem key={link.url}>
+							<NavLink
+								params={link.url}
+								active={
+									location.pathname === link.url && 'active'
+								}>
+								{link.label}
+							</NavLink>
+						</Container.MenuItem>
 					))}
-				</Menu>
-			</Navbar>
+				</Container.Menu>
+			</Container.Navbar>
 		</Container>
 	);
 }
