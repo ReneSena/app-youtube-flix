@@ -4,8 +4,6 @@
 
 ## :rocket: [Acessar site em produção](http://app-youtube-flix-renesena.vercel.app/)
 
-<hr />
-
 ## Sumário
 
 -   [Objetivo](#objetivo)
