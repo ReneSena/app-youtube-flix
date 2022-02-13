@@ -3,7 +3,7 @@ import api from '../index';
 export function getPlaylistVideosService(idPlaylist) {
 	return api
 		.get(
-			`/playlistItems?playlistId=${idPlaylist}&key=${process.env.REACT_APP_API_KEY}&part=snippet&fields=items&maxResults=5`
+			`/playlistItems?playlistId=${idPlaylist}&key=${process.env.REACT_APP_VERCEL_API_KEY}&part=snippet&fields=items&maxResults=5`
 		)
 		.then(response => {
 			if (response.status === 200) {
