@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 import React from 'react';
 import Keyboard from 'react-simple-keyboard';
 import 'react-simple-keyboard/build/css/index.css';
@@ -11,9 +12,8 @@ import FeedbackSearch from '../../assets/images/search.svg';
 import { Loader } from '../../components/Loader';
 
 export function SearchPage() {
-	const { searchedVideos, setSearchedVideos } = React.useContext(
-		ContextGlobal
-	);
+	const { searchedVideos, setSearchedVideos } =
+		React.useContext(ContextGlobal);
 	const keyboard = React.useRef();
 	const [layout, setLayout] = React.useState('default');
 	const [input, setInput] = React.useState('');
